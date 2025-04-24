@@ -73,19 +73,19 @@ make cli NAME=juan EXPORT=true  # Exporta a JSON
 ### 🔍 Buscar usuarios por nombre
 
 ```bash
-curl --location 'http://127.0.0.1:8000/api/search/?name=juan'
+curl --location 'http://0.0.0.0:8000:8000/api/search/?name=juan'
 ```
 
 ### 👤 Obtener perfil por ID
 
 ```bash
-curl --location 'http://127.0.0.1:8000/api/profile/45678'
+curl --location 'http://0.0.0.0:8000/api/profile/45678'
 ```
 
 ### 📦 Obtener perfiles por lista de IDs
 
 ```bash
-curl --location 'http://127.0.0.1:8000/api/profiles' \
+curl --location 'http://0.0.0.0:8000/api/profiles' \
      --header 'Content-Type: application/json' \
      --data '{
        "user_ids": [30995, 36442011, 5952380]
@@ -95,7 +95,7 @@ curl --location 'http://127.0.0.1:8000/api/profiles' \
 ### 📄 Exportar perfiles a JSON (por IDs)
 
 ```bash
-curl --location 'http://127.0.0.1:8000/api/export/by-ids' \
+curl --location 'http://0.0.0.0:8000/api/export/by-ids' \
 --header 'Content-Type: application/json' \
 --data '{
   "user_ids": [3098895, 36442011, 5952380]
