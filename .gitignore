@@ -1,0 +1,22 @@
+# Entorno virtual
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Configuración del IDE (PyCharm)
+.idea/
+.vscode/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Datos sensibles
+.env
+
+# Archivos generados por el scraper
+core/config/_data/users.json

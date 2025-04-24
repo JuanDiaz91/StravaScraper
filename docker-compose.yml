@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    container_name: strava_api
+    command: python api/main.py
+    ports:
+      - "${UVICORN_PORT:-8000}:${UVICORN_PORT:-8000}"
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app

@@ -1,0 +1,6 @@
+requests
+browserforge
+beautifulsoup4
+python-decouple
+fastapi
+uvicorn
