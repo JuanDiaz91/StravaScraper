@@ -57,4 +57,4 @@ def ping():
 
 
 if __name__ == "__main__":
-    uvicorn.run("api.main:app", host=UVICORN_HOST, port=UVICORN_PORT, reload=True)
+    uvicorn.run("api.main:app", host=UVICORN_HOST, port=UVICORN_PORT)
