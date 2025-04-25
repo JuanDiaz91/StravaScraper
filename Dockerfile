@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PYTHONPATH=/app  # 👈 Aquí el truco
+ENV PYTHONPATH=/app 
 
 WORKDIR /app
 
